@@ -18,7 +18,7 @@ const Hero = () => {
         
         {/* LEFT */}
         <div className="text-center md:text-left">
-          <p className="text-sm tracking-widest text-gray-200 md:text-gray-300">
+          <p className=" mt-0.8 text-sm tracking-widest text-gray-200 md:text-gray-300">
             Welcome to caffe Rizz 
           </p>
 
@@ -48,7 +48,7 @@ const Hero = () => {
              <img
                 src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
                 alt="coffee"
-             className="rounded-2xl shadow-[0_30px_80px_rgba(0,0,0,0.4)]  w-[250px] md:w-[360px] transform md:rotate-[-2deg] hover:rotate-0 hover:scale-105 transition duration-500"
+             className="rounded-2xl shadow-[0_30px_80px_rgba(0,0,0,0.4)]  w-[220px] md:w-[360px] transform md:rotate-[-2deg] hover:rotate-0 hover:scale-105 transition duration-500"
               />
  
           </div>
