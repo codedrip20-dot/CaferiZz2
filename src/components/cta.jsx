@@ -25,17 +25,9 @@ const Cta = () => {
         <p className="mt-4 text-white/80 text-sm md:text-base">
           Visit us today or explore our menu online.
         </p>
-
-        <button
-          className="
-            mt-6 px-8 py-3 bg-white text-[#6f4e37] 
-            roundedfull font-semibold 
-            shadow-lg hover:shadow-xl 
-            hover:scale-105 active:scale-95 
-            transition duration-300
-          "
-        >
-          Order Now →
+        <button className="mt-6 px-8 py-3 hover:text-green-600 hover:transform-3d bg-white text-[#6f4e37] md:rounded-full rounded-full font-semibold 
+        shadow-lg hover:shadow-2xl active:scale-95 transition duration-300">
+        Order Now →
         </button>
 
         <p className="text-sm text-white/70 mt-4">
