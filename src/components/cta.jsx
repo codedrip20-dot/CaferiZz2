@@ -45,7 +45,7 @@ const Cta = () => {
         </motion.p>
 
        <motion.a
-            href="https://wa.me/918945950843"
+            href="https://wa.me/9196351 18559"
             target="_blank"
             rel="noopener noreferrer"
             
