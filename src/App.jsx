@@ -1,4 +1,7 @@
 import React from "react";
+import Hero from "./components/hero";
+import Ctc from "./assets/ctc.png"
+import Cta from "./components/cta";
 
 const App = () => {
   return (
@@ -11,7 +14,7 @@ const App = () => {
 
   {/* Logo */}
   <h1 className="text-lg font-semibold tracking-wide">
-    Brew<span className="text-[#8B5E3C]">Haus</span>
+    Caffe<span className="text-[#8B5E3C]">Rizz</span>
   </h1>
 
   {/* Menu (desktop only) */}
@@ -31,61 +34,10 @@ const App = () => {
 </nav>
 
       {/* HERO */}
-    <section className="min-h-[85vh] flex items-center">
- <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-12 px-6 py-16">
-    
-    {/* LEFT */}
- <div className="max-w-lg mx-auto md:mx-0 text-center md:text-left space-y-5 fade-up">
-      <p className="text-sm text-gray-600  tracking-widest">
-        SPECIALTY COFFEE HOUSE
-      </p>
-
-  <h1 className="text-5xl md:text-7xl font-semibold leading-tight text-[#2d1f14]">
-  Savor the <br />
-  <span className="text-[#8b5e3c]">art</span> of coffee.
-</h1>
-
-     <p className="mt-6 text-gray-600 max-w-lg text-lg">
-  Where every cup is a masterpiece and every moment is yours.
-</p>
-
-  <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center md:justify-start">
-  <button className="bg-[#8b5e3c] text-white px-5 py-3 rounded-full hover:scale-105 transition shadow-md">
-    View Menu
-  </button>
-
-  <button className="border border-gray-400 px-7 py-3 rounded-full hover:bg-gray-100 transition">
-    Watch Story
-  </button>
-
-      </div>
-    </div>
-
-    {/* RIGHT */}
-
- <div className="relative flex justify-center md:justify-end fade-up">
-
-  
-   <div className="absolute w-72 h-72 bg-[#c8a27a] blur-[120px] opacity-40 rounded-full top-10"></div>
-<div className="absolute w-52 h-52 bg-[#e6c7a1] blur-[100px] opacity-30 rounded-full top-20 left-10"></div>
-
-  {/* Actual Image */}
-  
-   <img
-    src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
-    alt="coffee"
-   className="relative z-10 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.25)] w-full max-w-xs md:max-w-md rotate-1 hover:rotate-0 transition duration-500"
-  />
- 
-
-
-</div>
-
-  </div>
-</section>
+   <Hero />
 
 {/* Menu section */}
-<section className="px-10 md:px-20 pt-16 pb-24">
+<section className="px-10 md:px-20 pt-16 pb-24 bg-gradient-to-b from-transparent via-white to-white py-20">
   <div className="max-w-6xl mx-auto">
 
     {/* Heading */}
@@ -135,26 +87,32 @@ const App = () => {
 
       {/* inner card */}
       <div className="
-        rounded-3xl p-6 h-full
-        bg-[#f5f1eb]
-        relative overflow-hidden
-      ">
+          group rounded-3xl p-6 h-full
+          bg-white/70 backdrop-blur-md
+          border border-white/40
+          relative overflow-hidden
+          transition duration-300
+          hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)]
+          ">
 
         {/* soft light glow */}
-        <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/30 blur-2xl rounded-full"></div>
+        <div className="absolute -top-12 -right-12 w-40 h-40 bg-[#8B5E3C]/20 blur-3xl rounded-full group-hover:scale-110 transition"></div>
 
         {/* icon */}
-        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#e7dfd6] mb-4 text-xl shadow-inner">
+        <div className="w-12 h-12 flex items-center justify-center rounded-full 
+                                    bg-[#8B5E3C]/10 text-[#8B5E3C]
+                                    mb-4 text-xl
+                                    group-hover:scale-110 transition">
           {item.icon}
         </div>
 
         {/* title */}
-        <h3 className="text-lg font-semibold text-gray-800">
+        <h3 className="text-lg font-semibold text-gray-900">
           {item.title}
         </h3>
 
         {/* desc */}
-        <p className="text-gray-500 mt-2 text-sm leading-relaxed">
+        <p className="text-gray-600 mt-2 text-sm leading-relaxed">
           {item.desc}
         </p>
 
@@ -162,28 +120,13 @@ const App = () => {
     </div>
 
   ))}
-
+  <div className="absolute inset-0 rounded-3xl ring-1 ring-inset ring-white/20 pointer-events-none"></div>
 </div>
   </div>
 </section>
 
 {/** ctc section */}
-<section className="mt-20 mx-6 rounded-3xl p-10 text-center 
-bg-gradient-to-br from-[#6f4e37] via-[#8b5e3c] to-[#c2a27c] text-white shadow-xl">
-
-  <h2 className="text-3xl md:text-4xl font-semibold">
-    Ready to experience the perfect coffee?
-  </h2>
-
-  <p className="mt-3 text-white/80">
-    Visit us today or explore our menu online.
-  </p>
-
-  <button className="mt-6 px-8 py-3 bg-white text-[#6f4e37] rounded-full font-medium hover:scale-105 transition">
-    Order Now →
-  </button>
-
-</section>
+<Cta />
     </div>
     </div>
   );
