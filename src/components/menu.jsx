@@ -87,7 +87,7 @@ const Menu = () => {
         );
 
   return (
-    <section className="relative px-6 md:px-20 pt-24 pb-32 bg-gradient-to-b from-transparent via-white to-white overflow-hidden">
+    <section id='menu' className="relative px-6 md:px-20 pt-24 pb-32 bg-gradient-to-b from-transparent via-white to-white overflow-hidden">
       
       {/* ambient glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#c08b5c12] blur-[160px] rounded-full pointer-events-none" />

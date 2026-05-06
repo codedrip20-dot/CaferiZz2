@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "Home", href: "#" },
-  { name: "Menu", href: "#" },
+  { name: "Home", href: "#hero" },
+  { name: "Menu", href: "#menu" },
   { name: "About", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Contact", href: "#cta" },
 ];
 
 const NavBar = () => {
@@ -66,6 +66,7 @@ const NavBar = () => {
             <motion.button
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
+
               className="
                 hidden md:block
                 bg-black
@@ -78,8 +79,8 @@ const NavBar = () => {
                 transition
                 shadow-lg
               "
-            >
-              Order Now
+            ><a  href="https://wa.me/918945950843">Order Now</a>
+              
             </motion.button>
 
             {/* Mobile Menu Button */}
@@ -173,7 +174,7 @@ const NavBar = () => {
                     shadow-lg
                   "
                 >
-                  Order Now
+                <a  href="https://wa.me/918945950843">Order Now</a>
                 </motion.button>
               </div>
             </motion.div>

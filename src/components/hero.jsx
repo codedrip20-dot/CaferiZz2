@@ -4,7 +4,7 @@ import heroBg from "../assets/banana leaves.PNG";
 
 const Hero = () => {
   return (
-    <section
+    <section id="hero"
       className="relative min-h-[85vh] flex items-center bg-cover bg-center"
       style={{
         backgroundImage: `url(${heroBg})`,

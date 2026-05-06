@@ -4,7 +4,7 @@ import ctc from "../assets/ctc.png";
 
 const Cta = () => {
   return (
-    <motion.section
+    <motion.section id="cta"
       className="mt-24 mx-6 md:mx-12 rounded-3xl overflow-hidden relative bg-cover bg-center py-16 px-6 md:py-24 md:px-12 text-center"
       style={{
         backgroundImage: `url(${ctc})`,

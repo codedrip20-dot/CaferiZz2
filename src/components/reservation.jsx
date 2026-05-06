@@ -30,7 +30,7 @@ const Reservation = () => {
   };
 
   return (
-    <section className="relative px-6 md:px-20 py-28 overflow-hidden bg-[#f8f5f2]">
+    <section id='reservation' className="relative px-6 md:px-20 py-28 overflow-hidden bg-[#f8f5f2]">
       
       {/* ambient glow */}
       <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-[#c08b5c15] blur-[120px] rounded-full pointer-events-none" />
