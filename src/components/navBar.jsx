@@ -79,7 +79,7 @@ const NavBar = () => {
                 transition
                 shadow-lg
               "
-            ><a  href="https://wa.me/918945950843">Order Now</a>
+            ><a  href="https://wa.me/919635118559">Order Now</a>
               
             </motion.button>
 
